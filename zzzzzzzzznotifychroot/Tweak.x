@@ -11,7 +11,7 @@ static void easy_spawn(const char* args[]){
     waitpid(pid, &status, WEXITED);
 }
 
-#define PLIST_PATH @"/var/mobile/Library/Preferences/jp.akusio.kernbypass.plist"
+#define PLIST_PATH @"/var/mobile/Library/Preferences/com.apple.kernbypass.plist"
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 extern CFNotificationCenterRef CFNotificationCenterGetDistributedCenter(void);
